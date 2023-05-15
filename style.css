@@ -1,0 +1,218 @@
+
+
+/*Step 1. Apply this styles to all our HTML elements*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "poppings", sans-serif ;
+    box-sizing: border-box;
+}
+
+/*Step 4 => this will be applicable to all anchor tags*/
+a{
+    text-decoration: none;
+    color: #5a5a5a;
+}
+
+/*Step 5 => this will be applicable to all img tags*/
+a{
+    cursor: pointer;
+
+}
+
+/* Step 10 => Add some css properties to align things side by side in our nav*/
+.flex-div{
+    display: flex;
+    align-items: center;
+}
+
+/* Step 11 => General properties for our nav*/
+nav{
+    padding: 10px 2%;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+/* Step 12 => Adjust images inside our right nav div*/
+.nav-right img{
+    width: 25px;
+    margin-right: 25px;
+    cursor: pointer;
+}
+/* Step 14 => Adjust our image inside right div*/
+.nav-right .user-icon{
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 0;
+    cursor: pointer;
+}
+
+/* Step 16 => We need to adjust left part of the nav, menu icon and logo*/
+.nav-left .menu-icon{
+    width: 22px;
+    margin-right: 25px;
+    cursor: pointer;
+}
+.nav-left .logo{
+    width: 130px;
+    cursor: pointer;
+}
+
+/* Step 21 => Adjust the mic icon in the middle div*/
+.nav-middle .mic-icon{
+width: 16px;
+cursor: pointer;
+}
+/* Step 22 => Adjust the search-box div*/
+.nav-middle .search-box{
+ border: 1px solid #ccc;
+ margin-right: 15px;
+ padding: 8px 12px;
+ border-radius: 25px;
+}
+
+/* Step 23 => Adjust input box & img inside search box div*/
+.nav-middle .search-box input{
+    width: 400px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+}
+.search-box .flex-div img{
+width: 15px;
+}
+
+
+/* Step 26 => Adjust the general sidebar properties*/
+.sidebar{
+    background: #fff;
+    width: 15%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    padding-left: 2%;
+    padding-top: 80px;
+}
+
+/* Step 27 => Adjust the img inside shorcut-links class inside  sidebar*/
+.shortcut-links a img{
+    width: 20px;
+    margin-right: 20px;
+}
+/* Step 28 => Adjust a properties inside short-cut links class inside sidebar*/
+.shortcut-links a{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: fit-content;
+    flex-wrap: wrap;
+}
+
+/* Step 29 => We will select the first anchor tag*/
+.shortcut-links a:first-child{
+color: #ed3833;
+}
+
+/* Step 31 => Adjust the hr line*/
+.sidebar hr{
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    width: 20%;
+}
+
+/* Step 33 => Adjust h3,a & img tag inside subscribed-list div*/
+.subscribed-list h3{
+    font-size: 13px;
+    margin: 20px 0;
+    color: #5a5a5a;
+}
+.subscribed-list a{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: fit-content;
+    flex-wrap: wrap;
+}
+.subscribed-list a img{
+    width: 25px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+/* STEP 35 => For the sidebar we have added width: 15%, but when we click on that button we will decrase it.
+              Also, we remove the p tag inside a tag, h3 tag & hr tag.*/
+.small-sidebar{
+    width: 5%;
+}
+.small-sidebar a p{
+ display: none;
+}
+.small-sidebar h3{
+    display: none;
+}
+.small-sidebar hr{
+    width: 50%;
+    margin-bottom: 25px;
+}
+
+
+/* Step 37 => Main Container*/
+.container{
+    background: #f9f9f9;
+    padding-left: 17%;
+    padding-right: 2%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+/* We set the banner div to have 100% width of its parent container in our case: container*/
+.banner{
+    width: 100%;
+}
+/* We set the banner image to be 100% of its parent width in our case: banner div, and border radius.*/
+.banner img{
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* We set the container that will hold the videos list to have a grid display with some other properties.*/
+.list-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 16px;
+    grid-row-gap: 30px;
+    margin-top: 15px;
+}
+/* our vide thumbnail*/
+.vid-list .thumbnail{
+    width: 100%;
+    border-radius: 5px;
+}
+.vid-list .flex-div{
+    align-items: flex-start;
+    margin-top: 7px;
+}
+
+/* Here we adjust the list circle image below the video*/
+.vid-list .flex-div img{
+    width: 35px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.vid-info{
+    color: #5a5a5a;
+    font-size: 13px;
+}
+.vid-info a{
+    color: #000;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+
